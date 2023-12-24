@@ -1,0 +1,191 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Clear = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextBox = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+-- Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0837988779, 0, 0.0835561454, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 148, 0, 182)
+
+Clear.Name = "Clear"
+Clear.Parent = Frame
+Clear.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.5547809, 0, 0.842465758, 0)
+Clear.Size = UDim2.new(0, 54, 0, 23)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clear.TextSize = 14.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Clear
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0967782512, 0, 0.842465758, 0)
+Execute.Size = UDim2.new(0, 54, 0, 23)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 14.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Execute
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.391891897, 0, 0.0274725277, 0)
+TextLabel.Size = UDim2.new(0, 28, 0, 15)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Made by JOJI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 16.000
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.864864886, 0, 0, 0)
+Close.Size = UDim2.new(0, 20, 0, 20)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 20.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Close
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.096778661, 0, 0.16483517, 0)
+ScrollingFrame.Size = UDim2.new(0, 122, 0, 115)
+ScrollingFrame.ZIndex = 3
+ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.XY
+ScrollingFrame.CanvasSize = UDim2.new(200, 0, 200, 0)
+ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.ScrollBarThickness = 5
+
+TextBox.Parent = ScrollingFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(-5.00288138e-07, 0, -0.000217338224, 0)
+TextBox.Size = UDim2.new(0, 119, 0, 115)
+TextBox.ZIndex = 3
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.Arial
+TextBox.MultiLine = true
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 15.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = Frame
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(196, 255, 2)
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, 0.745320797, 0)
+Open.Size = UDim2.new(0, 93, 0, 34)
+Open.Visible = false
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open Gui"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 30.000
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Open
+
+-- Scripts:
+
+local function WNQJB_fake_script() -- Frame.Execute 
+	local script = Instance.new('LocalScript', Frame)
+
+	local button = script.Parent.Execute
+	local textbox = script.Parent.ScrollingFrame.TextBox
+	button.MouseButton1Click:Connect(function()
+		local script = textbox.Text
+		assert(loadstring(script)())
+	end)
+end
+coroutine.wrap(WNQJB_fake_script)()
+local function HVHYEG_fake_script() -- Frame.Clear 
+	local script = Instance.new('LocalScript', Frame)
+
+	local button = script.Parent.Clear
+	local textbox = script.Parent.ScrollingFrame.TextBox
+	button.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+end
+coroutine.wrap(HVHYEG_fake_script)()
+local function RVWRAI_fake_script() -- Frame.Drag 
+	local script = Instance.new('LocalScript', Frame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(RVWRAI_fake_script)()
+local function ILPIKU_fake_script() -- ScreenGui.Gui Close  
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local button = script.Parent.Frame.Close
+	button.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = false
+		script.Parent.Open.Visible = true
+	end)
+end
+coroutine.wrap(ILPIKU_fake_script)()
+local function RPEDFL_fake_script() -- ScreenGui.Gui Open 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local button = script.Parent.Open
+	button.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		button.Visible = false
+	end)
+end
+coroutine.wrap(RPEDFL_fake_script)()
